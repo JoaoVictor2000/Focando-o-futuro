@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antes e Depois</title>
+
+</head>
+<body>
+ <button onclick="antes_depois()"> Antes e Depois</button>   
+ <script>
+    function  antes_depois(){
+        var numero = Number.parseInt(window.prompt('Digite um numero inteiro qualquer'))// tive que tranformar em um numero pois ão daria certo por causa da concatenação no window.alert
+
+         
+        window.alert((`Antecessor do numero ${numero} é: ${numero-1}
+        Ja o sucessor do numero ${numero} é: ${numero+1}`))
+    }
+ </script>
+</body>
+</html>

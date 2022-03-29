@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do Conversor de medidas</title>
+</head>
+
+<body>
+    <h1>Desafio do Conversor de medidas</h1>
+    <button onclick="conversor()">Converter</button>
+    <p>Clique no botão acima para inciar.</p>
+    <script>
+        function conversor() {
+            var metros =window.prompt('Digite um distancia em metros(m)')
+            
+             metros = metros.replace('.',',')
+            var calculandokm = String(metros/1000)
+            calculandokm = calculandokm.replace('.',',')
+           metros = parseFloat(metros).toFixed(5)
+          calculandokm = parseFloat(calculandokm).toFixed(5)
+          
+            window.document.write(`${metros} para km é:${calculandokm}`)
+        }
+    </script>
+</body>
+
+</html>

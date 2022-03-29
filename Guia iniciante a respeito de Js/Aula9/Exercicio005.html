@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro passos com DOM</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+            color: aliceblue;
+            background-color: rgb(59, 61, 168);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aqui vai o resultado: </p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em javascprit</p>
+    <div  id="msg">Clique em mim</div>!
+   <!--<div  name="msg">Clique em mim</div><!--por name-->
+  <Script>
+        // usando por nometag
+       // var  p1 = window.document.getElementsByTagName('p')[1]
+     
+       //usando por id 
+     //  var  p1 = window.document.getElementById('msg')
+       //p1.style.background = 'red'
+       //p1.innerText = 'estou aguardando' //Mudando o conteudo dentro da varivel 
+      /// window.document.getElementById("msg").innerText = 'Olaaaaaaa' // faz a mesma mudança do que o comando de cima
+       
+     //usando por name
+     //var  p1 = window.document.getElementsByName('msg')[0]
+    // p1.innerText = 'CHAMAAAAAAAAAA'
+     
+    //Por selector(forma nova e recomendada por maioria dos manuais)
+    var p1 = window.document.querySelector('div#msg') // div sao representadas por #, ENQUANTO as classes por .
+   //query é mais pratico quando estou tentando fazer alterações rapidas dentro do meu site 
+    //sempre usar o id em divs caso queira usar query selector
+    p1.style.background = 'red'
+
+      // window.alert(p1.innerHTML)//Tras o comando inteiro, com tudo que o contem dentro
+     //esse aqui nao tras o comando inteiro, pegando sem a formatacao e sem os filhos 
+     //   window.document.write(p1.innerText)//innertext é o texto que esta dentro da variavel
+p1.style.color = 'blue' // Mudando o p1 para a cor azul, por meio do documento
+
+  </Script>
+</body>
+
+</html>
