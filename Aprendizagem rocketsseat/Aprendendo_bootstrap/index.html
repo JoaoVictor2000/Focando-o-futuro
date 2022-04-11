@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css"> <!-- utilizando o boostrap -->
+    <link rel="stylesheet" href="css/style.css" type="text/css"> <!-- utilizando um css que criei -->
+    <title>Aprendendo a utilizar bootstrap</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <!-- vamos criar uma barra de navegaçao que vai ser grande(expand) e vai ser clara(lg) -->
+        <a class="navbar-brand" href="#">
+            <img src="TrabalhoArtes/MajaDesnuda.png" id="img-principal"></img>
+        </a>
+        <div class="collapse navbar-collapse container">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link " href="#quemsomos">Quem somos</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="#parceiros">Parceiros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#servicos">Servicos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="quemsomos">
+        <!-- container é uma classe estabelecida e famosa no bootstrap, mas ele não pega a página inteira -->
+        <!-- Por isso, usaremos o container-fluid, o qual consegue pegar a pagina inteira-->
+        <div class="container-fluid quem_somos text-center margin">
+            <!-- tem como colocar class seguida de class na frente -->
+            <!-- a class text-center deixa o texto centralizado dentro do container -->
+            <h3>Quem somos</h3>
+            <!-- a classe rounded-circle deixa A IMAGEM parecendo um circulo -->
+            <img src="TrabalhoArtes/Majavestida.png" class="rounded-circle" alt="Majavestida" width="400" height="400">
+            <h3>Somos um site de obras de artes magnificas, que foram utilizadas
+                para um trabalho de artes do
+                desenvolvedor do html
+            </h3>
+        </div>
+    </section>
+    <!-- agora vamos dividir a seçao dos parceiros em colunas -->
+    <section id="parceiros">
+        <div class="container-fluid text-center margin parceiros">
+            <h3>Parceiros</h3>
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-4 text-center">
+                        <img src="TrabalhoArtes/Venusemarte.png" width="300">
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="TrabalhoArtes/Venusemarte.png" width="300">
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="TrabalhoArtes/Venusemarte.png" width="300">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <div class="container-fluid text-center margin servicos">
+            <h3>Serviços</h3>
+            <div class="container">
+                <div class="row">
+                    <!-- o col-lg- sempre sera delimitado pela quantidade de imagens que você precisar
+                    Se for 6 imagens, o col-lg sera col-lg-2 -->
+                    <div class="col-lg-6">
+                        <p id="p1">Chama daquele jeito</p>
+                        <img src="TrabalhoArtes/Vênusaoespelho.png" width="500px">
+
+                    </div>
+                    <div class="col-lg-6">
+                        <p id="p1">chama de outro jeito</p>
+                        <img src="TrabalhoArtes/Venusurbino.png" width="500px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- criando um footer -->
+    <footer class="container-fluid text-center  bg-footer margin">
+        <p>Desenvolvido por João Victor</p>
+    </footer>
+</body>
+
+</html>

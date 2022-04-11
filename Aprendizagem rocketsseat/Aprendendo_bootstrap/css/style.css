@@ -1,0 +1,36 @@
+#img-principal{
+    max-width: 220px;
+    max-height: 50px;
+}
+.navbar{
+    background: #f3f7f6;
+}
+.quem_somos{
+    background-color: rgb(142, 142, 230);
+}.margin h3{
+    padding-top: 50px; /*extende o componente sem perder o inicio dele*/
+    padding-bottom: 50px;
+}
+.parceiros{
+    background-color: rgb(124, 207, 228);
+    padding-bottom: 50px;
+}
+.servicos{
+    background-color: rgb(193, 144, 240);
+}
+#p1{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif white;
+    font-size: 50px;
+   font-style: italic;
+}
+
+p{
+    color: rgb(241, 232, 232);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif white;
+    font-size: 20px;
+   font-style: italic;
+}
+.bg-footer{
+    background-color: rgb(12, 12, 12);
+}
