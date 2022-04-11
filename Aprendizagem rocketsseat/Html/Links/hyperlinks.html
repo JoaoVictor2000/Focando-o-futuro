@@ -1,0 +1,46 @@
+<!-- 
+    Hyperlinks -- Elemento Âncora: <a>
+        
+        +anatomia
+
+        +atributos:
+            - globais
+            - href:
+                    - para onde o iremos, quando clicamos no link?
+                    - url completa
+                    - fragmento
+                    - email
+                    - telefone
+                    - e outros
+            - download
+            -target 
+                - _self(padrão)
+                - _blank //faz com que abra uma nova tab, com o link e a pagina do href
+
+ Em sua anatomia ele recebe atributos globais (title, id ,class,...) e o mais importante href,
+ a referência, podendo ser url completa, fragmento, email, telefone e mais diversos outros. 
+há também o atributo de download, que é download="", usado junto do href="",por exemplo, se você 
+ colocar o link de uma imagem no href="" com o atributo de download, a imagem será baixada ao invés 
+ de irmos até a página e se colocarmos um valor no atributo de download, ele irá dizer como você vai 
+salvar o arquivo. Por fim temos o atributo target="", que irá dizer qual o alvo do nosso disparo, 
+ou seja, se não tivermos o target, quando clicarmos no link, ele vai pegar o mesmo alvo, a mesma página 
+e apenas vai trocar o conteúdo, mas se usarmos o atributo, por exemplo target="_blank", ele vai abrir uma 
+página com o conteúdo.
+ -->
+<a href="http://google.com"  target="_blank">Google</a><!-- faz com que abra uma nova tab, com o link e a pagina do href -->
+
+<!-- Questáo de fragmento do href -->
+<p>Saiba mais sobre fragmento em href</p>
+<ul>
+    <li><a href="#about">Sobre mim</a></li> <!--quando você aperta sobre cada link, ira direcionado a questáo do id mostrado  -->
+    <li><a href="#history">História</a></li>
+    <li><a href="#works">Trabalhos</a></li>
+</ul>
+
+<h1 id="about">Sobre mim</h1>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eius harum quos similique. Debitis, itaque sit veniam quam recusandae eligendi aspernatur neque deleniti adipisci provident excepturi voluptate, amet corporis laborum.
+
+<h2 id="history">História</h2>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore velit ab nisi sit quam quis ea provident. Sequi numquam modi, voluptatem velit nulla harum vel quasi nesciunt doloribus est aspernatur.
+<h2 id="works">Trabalhos</h2>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum aspernatur rerum aliquid quae aliquam et harum, vero quibusdam porro. Iusto architecto soluta reprehenderit dolores enim. Earum provident perferendis sapiente.
