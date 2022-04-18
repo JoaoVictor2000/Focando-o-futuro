@@ -1,0 +1,92 @@
+:root{
+    /*Utilizando variaveis dentro do css3 */
+    /*pra declarar uma variavel dentro do documento temos que declarar ela dentro do 
+elemento root, a raiz do nosso documento*/
+    --vermelho: #E50914;
+    /*é necessaario utilizar os dois traços pra usar variavel*/
+    /* Se voce ja sabe as cores do seu site, faça variaveis
+    pois, caso queira trocar uma hora, é só ir ao tal ponto e trocar*/
+    --preta: #141414;
+}
+
+* {
+    /*Com o *{}, ele se refere aos todos componentes presentes*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*faz com que os elementos sejam limitados a porta da caixa do header que ele esta*/
+}
+
+/*ELEMENTOS BASES*/
+
+body {
+    /*O que eu fizer no body pode influenciar nos filhos, mas não é todas as vezes*/
+    background: var(--preta);
+    /*UTILIZANDO A VARIAVEL CRIADA*/
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /*para justificar tudo conforme de maneira horizontal*/
+    /*space-between deixa um espaço entre a tag h2 e as outras. Calculando automaticamente*/
+}
+
+header .logo {
+    /*Onde mexeremos diretamente no logo*/
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    /*Mexendo dentro da area de navegação, formatando */
+    text-decoration: none;
+    /*tirando as linhas embaixo das letras*/
+    color: #aaa;
+    margin-right: 10px;
+    /*deixando uma margem de distancia entre nos links*/
+}
+
+header nav a:hover {
+    /*pegando umas par de tags*/
+    /*criando um evento, toda ver que o mouse estiver em cima*/
+    color: #fff;
+    /*ficara dessa cor*/
+}
+
+/*   RELACIONADO AO FILME PRINCIPAL */
+
+.filme-principal {
+    
+    font-size: 16px;
+    /*Essse linear-gradient é uma funcionalidade das CSS3 para criar degrades entre 2 pelo menos, ou mais cores em linha*/
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url('../img/capa-principal.jpg');
+
+    height: 600px; /*Determinando um tamanho para a imagem*/
+    background-size: cover; /*Delimitando a imagem, para se encaixar totalmente a caixa do div*/
+
+    /*Jogando os elementos como colunas atraves do display*/
+    display: flex;
+    flex-direction: column;
+    /*Deixando no meio da coluna, o justify-content segue a mesma direçao do 
+    flex direction*/
+    justify-content: center;
+    /*Deixando que os elementos comecem sempre da esquerda, pois ele se refere aos elementos da direita pra esquerda 
+    quando temos o flex-direction: column*/
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+   /*dando margem ao botao*/
+    margin-bottom: 90px;
+}
+.titulo{
+    font-size: 40px;
+}
