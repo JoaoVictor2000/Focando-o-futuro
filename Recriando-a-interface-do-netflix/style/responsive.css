@@ -1,0 +1,13 @@
+/*REGRA DE MIDIA PARA DEIXAR RESPONSIVO A PARTE DE CIMA DO SITE*/
+@media screen and (max-width:700px){
+header .container{
+    display: flex;
+    flex-direction: column;
+}
+}
+/*deixando o texto agrupadinho*/
+@media screen and (min-width:1000px){
+    .descricao{
+        width: 50%;
+    }
+}

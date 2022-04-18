@@ -1,4 +1,4 @@
-:root{
+:root {
     /*Utilizando variaveis dentro do css3 */
     /*pra declarar uma variavel dentro do documento temos que declarar ela dentro do 
 elemento root, a raiz do nosso documento*/
@@ -23,7 +23,7 @@ body {
     /*O que eu fizer no body pode influenciar nos filhos, mas não é todas as vezes*/
     background: var(--preta);
     /*UTILIZANDO A VARIAVEL CRIADA*/
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: #fff;
 }
 
@@ -64,13 +64,15 @@ header nav a:hover {
 /*   RELACIONADO AO FILME PRINCIPAL */
 
 .filme-principal {
-    
+
     font-size: 16px;
     /*Essse linear-gradient é uma funcionalidade das CSS3 para criar degrades entre 2 pelo menos, ou mais cores em linha*/
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url('../img/capa-principal.jpg');
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%), url('../img/capa-principal.jpg');
 
-    height: 600px; /*Determinando um tamanho para a imagem*/
-    background-size: cover; /*Delimitando a imagem, para se encaixar totalmente a caixa do div*/
+    height: 600px;
+    /*Determinando um tamanho para a imagem*/
+    background-size: cover;
+    /*Delimitando a imagem, para se encaixar totalmente a caixa do div*/
 
     /*Jogando os elementos como colunas atraves do display*/
     display: flex;
@@ -83,10 +85,55 @@ header nav a:hover {
     align-items: flex-start;
 }
 
-.filme-principal .descricao{
-   /*dando margem ao botao*/
+.filme-principal .descricao {
+    /*dando margem ao botao*/
     margin-bottom: 90px;
+    margin-top: 10px;
 }
-.titulo{
+
+.titulo {
+    margin-top: 15%;
     font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    /*tirando as bordas que vem padrao*/
+    border: none;
+    color: white;
+    /*vamoss afastar os botoes com a padding
+    a qual lida com os espaços internos do elemento*/
+    padding: 15px;
+    /*Quando coloca apenas um valor, ele se refere as 
+    quatros posiçoes: top, left, rigth etc*/
+    margin-right: 15px;
+    /*separando eles um pouco*/
+    font-size: 12px;
+
+    /*Cuida da parte de transiçoes*/
+    /*3s é o tempo, e ease all é a configuração*/
+    transition: .3s ease all;
+}
+
+/*Assim que o usuario passar em cima do botao, ele mudara de cor, de preto e branco para branco e preto*/
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+/*na classe botao, na tag i*/
+.botao i {
+    margin-right: 5px;
+}
+
+/*E VAMOS DE CARROSEL*/
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
 }
