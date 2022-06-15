@@ -1,5 +1,5 @@
 /*
-    Type conversion (typecasting) vs Type coersion
+    Type conversion (typecasting) vs Type coersion (o js coversionando por de baixo dos panos)
 
     * Alteração de um tipo de dado para outro tipo 
       
