@@ -16,7 +16,7 @@ _Glossary: Dependencies, Packages, Modules_
 ### Arquivo no formato de javscript obcjet 
 
 - [ ] utilizar modulos de terceiros
-1.**npm install cfonts** (irá buscar na biblioteca do npm o modulo)
+1.**npm install cfonts** (irá buscar na biblioteca do npm o modulo chamado cfonts)
 
 2. **npm i cfonts (também instala)**
 
